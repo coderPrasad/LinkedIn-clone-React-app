@@ -1,24 +1,36 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import Header from './Header';
+import Sidebar from './Sidebar';
+import Feed from './Feed';
+//import { Provider, useSelector } from "react-redux";
+//import { selectUser } from './features/userSlice';
+
+
+
 
 function App() {
+
+  
+
   return (
+    
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Let's Build a Linkedin clone</h1>
+      {/* HEader */}
+      <Header />
+      {/* App body */}
+      
+         <div className='app_body'>
+         <Sidebar />
+         <Feed />
+         {/* sidebar */}
+         {/* Widget */}
+       </div>
+      
+     
     </div>
+    
   );
 }
 
